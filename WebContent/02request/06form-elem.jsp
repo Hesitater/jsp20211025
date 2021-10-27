@@ -26,6 +26,5 @@ String param = request.getParameter("key");
 %>
 
 <p>값 : <%= map.get(param) %></p>  <%--language / framework / library / null 이출력되도록 --%>
-
 </body>
 </html>
