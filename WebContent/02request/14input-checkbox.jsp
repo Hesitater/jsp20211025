@@ -39,10 +39,13 @@ if (params != null) {
 %>
 <hr>
 <%
-for (int i=0; i<params.length;i++) {
-	out.print("<li>");
-	out.print(params[i]);
-	out.print("</li>");
+if (params != null ) {
+	
+	for (int i=0; i<params.length;i++) {
+		out.print("<li>");
+		out.print(params[i]);
+		out.print("</li>");
+	}
 }
 
 %>
