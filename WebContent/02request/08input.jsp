@@ -24,25 +24,6 @@ submit : <input type="submit" /><br />
 <hr />
 number : <input type="number" min="0" max="10" step="2" /> <br />
 
-<!-- span>lorem1^br -->
-<span>Lorem.</span>
-<br>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
