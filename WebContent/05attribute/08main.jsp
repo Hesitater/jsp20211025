@@ -22,18 +22,10 @@ list.add(new MyBook("나를, 의심한다", 11700));
 list.add(new MyBook("희한한 위로", 12600));
 %>
 
-
-<ul>
-<h1>강세형 작가 책과 가격</h1>
 <%
-	for( int i = 0; i <list.size(); i++) {
-	request.setAttribute("books", list.get(i));
+	request.setAttribute("books", list);
 %>
 	<jsp:include page="08sub.jsp"></jsp:include>
-	<%
-	}
-	%>		
 
-</ul>
 </body>
 </html>

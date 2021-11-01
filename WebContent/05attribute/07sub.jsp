@@ -5,7 +5,6 @@
 
 <%request.setCharacterEncoding("utf-8");%>
 
-
 <%
 MyBook book = (MyBook) request.getAttribute("book");
 %>
