@@ -38,7 +38,6 @@
 <li>${books[3].title } : ${books[3].price }원</li>
 <li>${books[4].title } : ${books[4].price }원</li>
 <li>${books[5].title } : ${books[5].price }원</li>
-
 </ul>
 </body>
 </html>
