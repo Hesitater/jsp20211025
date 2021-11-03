@@ -15,5 +15,6 @@
 
 
 <%=application.getAttribute("appAttr1") %>
+
 </body>
 </html>

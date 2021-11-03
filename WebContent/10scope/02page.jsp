@@ -20,7 +20,6 @@ pageContext.setAttribute("pageAttr1", "pageVal1");
 <%
 String attr1 = (String) pageContext.getAttribute("pageAttr1");
 %>
-
 <%=attr1 %>
 </body>
 </html>

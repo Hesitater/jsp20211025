@@ -17,11 +17,9 @@
 <%
 pageContext.setAttribute("pageAttr2", "pageVal2");
 %>
-
 <jsp:include page="03pageSub.jsp"></jsp:include>
 
 <hr>
 pageAttr2 : <%=pageContext.getAttribute("pageAttr2")%>
-
 </body>
 </html>

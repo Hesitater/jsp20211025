@@ -16,6 +16,5 @@
 <%
 application.setAttribute("appAttr1", "appVal1");
 %>
-
 </body>
 </html>

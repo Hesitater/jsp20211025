@@ -12,8 +12,6 @@
 </head>
 <body>
 <h1>request, session, application</h1>
-
-
 <%
 Integer reqCounter = (Integer) request.getAttribute("counter");
 if (reqCounter == null) {
@@ -38,7 +36,6 @@ appCounter++;
 application.setAttribute("counter", appCounter);
 	
 %>
-
 <ul>
 	<li>request counter : <%=request.getAttribute("counter") %></li>
 	<li>session counter : <%=session.getAttribute("counter") %></li>

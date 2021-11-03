@@ -19,5 +19,6 @@
 	<li>session : 하나의 브라우저 (session - HttpSession)</li>
 	<li>application : 하나의 웹 애플리케이션 (application = ServletContext)</li>
 </ul>
+
 </body>
 </html>
