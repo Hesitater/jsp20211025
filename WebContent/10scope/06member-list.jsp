@@ -23,7 +23,6 @@ if ( members != null) {
 	for (String member : members ) {
 %>
 		<li><%=member %></li>
-	
 <% 
 	}
 }

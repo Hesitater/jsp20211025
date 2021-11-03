@@ -22,5 +22,4 @@ if ( userName != null) {
 // member-list.jsp로 redirect
 response.sendRedirect("06member-list.jsp");
 
-
 %>

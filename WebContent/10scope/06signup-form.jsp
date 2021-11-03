@@ -17,6 +17,5 @@
 	<input type="text" name="userName" placeholder="이름"> <br>
 	<input type="submit" value="등록">	
 </form>
-
 </body>
 </html>
