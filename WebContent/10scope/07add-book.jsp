@@ -36,7 +36,6 @@ books.add(book);
 	
 //리디렉션	
 response.sendRedirect("07book-list.jsp");
-	
 %>
 </body>
 </html>
