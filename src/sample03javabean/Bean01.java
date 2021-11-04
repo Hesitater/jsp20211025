@@ -31,5 +31,4 @@ public class Bean01 {
 	public int getValue3() {
 		return value3;
 	}
-	
 }
