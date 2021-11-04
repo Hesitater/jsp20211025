@@ -22,5 +22,4 @@ public class Bean02 {
 		this.age = age;
 	}
 	
-	
 }
