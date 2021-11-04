@@ -28,5 +28,4 @@ public class Bean04 {
 	public void setVip(boolean vip) {
 		this.vip= vip;
 	}
-	
 }
