@@ -30,3 +30,4 @@ public class Bean03  {
 		this.age = age;
 	}
 }
+
