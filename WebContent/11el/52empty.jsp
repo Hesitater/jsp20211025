@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="<%= request.getContextPath() %>/resource/css/icon/css/all.css">
 
-<title>Insert title here</title>
+<title>52empty</title>
 </head>
 <body>
 <h1>empty</h1>
