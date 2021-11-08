@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>51logical-ex</title>
+<title>51logical-ex.jsp</title>
 </head>
 <body>
 <%
