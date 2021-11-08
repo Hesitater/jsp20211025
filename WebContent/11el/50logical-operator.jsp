@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>50logical-operator.jsp</title>
+<title> 50logical-operator.jsp </title>
 </head>
 <body>
 <h1>논리 연산자</h1>
@@ -41,8 +41,7 @@
 
 <h2>not : false --> true, true --> false</h2>
 <p>\${not false  } : ${not false }</p>
-<p>\${not true  } : ${!not true }</p>
-
+<p>\${not true  } : ${not true }</p>
 
 </body>
 </html>
