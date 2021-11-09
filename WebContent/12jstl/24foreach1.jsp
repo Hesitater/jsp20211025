@@ -25,13 +25,7 @@
 		background-color: violet;
 		border : 2px solid blue;
 	}
-/* 	body {
-		background-image: url('p4.jpg') , url('p5.jpg');
-		background-size: 100%; 
-		background-repeat: no-repeat;
-		background-position: 
-		background-attachment: fixed;
-	} */
+
 </style>
 
 <title>24foreach1</title>
