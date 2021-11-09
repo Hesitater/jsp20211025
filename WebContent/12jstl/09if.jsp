@@ -33,7 +33,6 @@
 <h1>${mytest }</h1>
 <h1>${sessionScope.mytest }</h1>
 
-
 </body>
 </html>
 
