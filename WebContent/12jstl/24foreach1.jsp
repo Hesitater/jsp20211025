@@ -15,7 +15,7 @@
 		border-collapse: collapse;
 		width: 100%;
 		background-image: url('p4.jpg'); 
-		background-size: 100%;
+		background-size: 50%;
 		background-repeat: no-repeat;
 	}
 	table,  td {
