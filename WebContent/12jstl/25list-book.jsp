@@ -49,7 +49,12 @@
 						<c:param name="index" value="${status.index }" />
 					</c:url>
 					<td>
-						<a class="btn btn-danger" href="${deleteUrl }"><i class="fas fa-trash-alt"></i></a>
+						<%-- <a class="btn btn-danger" href="${deleteUrl }"><i class="fas fa-trash-alt"></i></a> --%>
+						<!-- Button trigger modal -->
+						<button type="button" class="fas fa-trash-alt"" data-toggle="modal" data-target="#exampleModal">
+  							Launch demo modal
+						</button>
+
 						<a href="${modifyUrl }" class="btn btn-secondary">
 							<i class="fas fa-edit"></i>
 						</a>	
@@ -65,6 +70,29 @@
 		</tbody>
 	</table>
 </c:if>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
