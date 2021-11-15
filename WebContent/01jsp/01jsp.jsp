@@ -9,7 +9,7 @@
 <body>
 
 	<h1>Hello new jsp file</h1>
-	<h2>I am seokhoon zz</h2>
+	<h2>I am hesitater zz</h2>
 	
 </body>
 </html>
