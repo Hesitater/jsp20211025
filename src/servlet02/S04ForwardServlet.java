@@ -36,6 +36,7 @@ public class S04ForwardServlet extends HttpServlet {
 //		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
 //		dispatcher.forward(request, response);
 		
+		
 	}
 
 	/**
