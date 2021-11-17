@@ -28,6 +28,8 @@ public class S01BookMainServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String path = "/WEB-INF/view/servlet08/main.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
+		
+		
 	}
 
 	/**
@@ -39,3 +41,8 @@ public class S01BookMainServlet extends HttpServlet {
 	}
 
 }
+
+
+
+
+
