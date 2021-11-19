@@ -1,4 +1,4 @@
- -- A 테이블의 내용을 읽을 때
+-- A 테이블의 내용을 읽을 때
  -- SELECT 와 FROM 조합으로 작성
  -- SELECT : 조회찰 열 (columns) 명시
  -- FROM : Table 명 작성
