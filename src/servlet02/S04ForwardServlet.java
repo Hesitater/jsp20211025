@@ -1,15 +1,11 @@
 package servlet02;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import sun.rmi.server.Dispatcher;
 
 /**
  * Servlet implementation class S04ForwardServlet
@@ -30,13 +26,8 @@ public class S04ForwardServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		String path = "/WEB-INF/view/servlet02/s04.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
-//		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
-//		dispatcher.forward(request, response);
-		
-		
 	}
 
 	/**
