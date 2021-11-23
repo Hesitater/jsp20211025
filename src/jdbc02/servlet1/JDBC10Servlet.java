@@ -56,7 +56,7 @@ public class JDBC10Servlet extends HttpServlet {
 				while (rs.next()) {
 					Supplier supplier = new Supplier();
 					int i = 1;
-					supplier.setSupplierId(rs.getInt(i++));
+					supplier.setSupplierID(rs.getInt(i++));
 					supplier.setSupplierName(rs.getString(i++));
 					supplier.setContactName(rs.getString(i++));
 					supplier.setAddress(rs.getString(i++));
@@ -77,7 +77,7 @@ public class JDBC10Servlet extends HttpServlet {
 			// 3.4 resultSet 처리
 		
 		// 4. setattribute
-			request.setAttribute("list1", list);
+			request.setAttribute("suppliers", list);
 		
 		
 		// 5. forward/ redirect
