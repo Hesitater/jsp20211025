@@ -36,9 +36,9 @@
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${list1 }"  var="sup">
+					<c:forEach items="${suppliers }"  var="sup">
 						<tr>
-							<td>${sup.supplierId }</td>
+							<td>${sup.supplierID }</td>
 							<td>${sup.supplierName }</td>
 							<td>${sup.contactName }</td>
 							<td>${sup.address }</td>
