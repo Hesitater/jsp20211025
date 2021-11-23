@@ -36,7 +36,7 @@
 					<tbody>
 						<c:forEach items="${customers}" var="customer">
 							<tr>
-								<td>${customer.customerId}</td>
+								<td>${customer.customerID}</td>
 								<td>${customer.customerName }</td>
 								<td>${customer.contactName }</td>
 								<td>${customer.address }</td>
