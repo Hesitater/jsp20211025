@@ -5,7 +5,7 @@ public class Customer {
 	private String contactName;
 	private String address;
 	private String city;
-	private int customerId;
+	private int customerID;
 	private String postalCode;
 	private String country;
 	
@@ -34,11 +34,11 @@ public class Customer {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getCustomerId() {
-		return customerId;
+	public int getCustomerID() {
+		return customerID;
 	}
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
 	}
 	public String getPostalCode() {
 		return postalCode;
