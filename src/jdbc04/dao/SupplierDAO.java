@@ -127,6 +127,76 @@ public class SupplierDAO {
 		return rowCount == 1;
 	}
 
+	public Supplier selectById(Connection con, int supplierID) {
+		String sql = "SELECT SupplierName, ContactName, Address, City, PostalCode, Country, Phone "
+				+ " FROM Suppliers "
+				+ " WHERE SupplierID = ? ";
+		
+		Supplier supplier = new Supplier();
+		
+		try (PreparedStatement pstmt = con.prepareStatement(sql)) {
+			pstmt.setInt(1, supplierID);
+			
+			try (ResultSet rs = pstmt.executeQuery()) {
+				if (rs.next()) {
+					String supplierName = rs.getString("SupplierName");
+					String contactName = rs.getString("ContactName");
+					String address = rs.getString("Address");
+					String city = rs.getString("City");
+					String postalCode = rs.getString("PostalCode");
+					String country = rs.getString("Country");
+					String phone = rs.getString("Phone");
+					
+					supplier.setSupplierID(supplierID);
+					supplier.setSupplierName(supplierName);
+					supplier.setContactName(contactName);
+					supplier.setAddress(address);
+					supplier.setCity(city);
+					supplier.setPostalCode(postalCode);
+					supplier.setCountry(country);
+					supplier.setPhone(phone);
+					
+					// 위에 코드를 한번에쓴것
+					/*
+					supplier.setAddress(rs.getString("Address"));
+					supplier.setSupplierName(rs.getString("SupplierName"));
+					supplier.setContactName(rs.getString("ContactName"));
+					supplier.setCity(rs.getString("City"));
+					supplier.setPostalCode(rs.getString("PostalCode"));
+					supplier.setCountry(rs.getString("Country"));
+					supplier.setPhone(rs.getString("Phone"));
+					supplier.setSupplierID(supplierID);
+					*/
+					
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return supplier;
+	}
+
+	public boolean deleteById(Connection con, int supplierID) {
+		String sql = "DELETE FROM Suppliers "
+				+ " WHERE SupplierID = ?";
+		
+		try (PreparedStatement pstmt = con.prepareStatement(sql)) {
+			
+			pstmt.setInt(1, supplierID);
+			
+			int count = pstmt.executeUpdate();
+			
+			return count == 1;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+
 	
 	
 	
