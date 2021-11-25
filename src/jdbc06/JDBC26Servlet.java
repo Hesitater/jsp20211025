@@ -20,29 +20,31 @@ import jdbc04.dao.SupplierDAO;
 @WebServlet("/jdbc06/s26")
 public class JDBC26Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public JDBC26Servlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public JDBC26Servlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		// 0. 사전 작업
 		ServletContext application = request.getServletContext();
 		DataSource ds = (DataSource) application.getAttribute("dbpool");
 		SupplierDAO dao = new SupplierDAO();
 		boolean ok = false;
-		
+
 		// 2. request 분석, 가공
 		Supplier supplier = new Supplier();
-		
+
 		supplier.setSupplierName("lim");
 		supplier.setContactName("sujung");
 		supplier.setAddress("kunkook");
@@ -51,34 +53,32 @@ public class JDBC26Servlet extends HttpServlet {
 		supplier.setPostalCode("");
 		supplier.setPhone("010-1979-0711");
 		supplier.setSupplierID(38);
-		
-		
+
 		// 3. business logic( 주로 db작업)
 		try (Connection con = ds.getConnection()) {
-				ok = dao.update(con, supplier);
-			
+			ok = dao.update(con, supplier);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-			// 3.1 커넥션 얻기
-			
-			// 3.2 statement 얻기
-			
-			// 3.3 쿼리 실행 (resultSet 얻기)
-			
-			// 3.4 resultSet 처리
-		
-		
-		
+
+		// 3.1 커넥션 얻기
+
+		// 3.2 statement 얻기
+
+		// 3.3 쿼리 실행 (resultSet 얻기)
+
+		// 3.4 resultSet 처리
+
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 	}
 
 }
