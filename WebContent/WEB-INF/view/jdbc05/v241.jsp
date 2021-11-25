@@ -23,11 +23,11 @@
         <!-- form>(.form-group>label[for=input$]+input.form-control#input$)*6+.form-group>label[for=select1]+select.form-control#select1 -->
         <form action="" method="post">
           <div class="form-group">
-            <label for="input1">Supplier Name</label>
+            <label for="input1">SupplierName</label>
             <input type="text" class="form-control" id="input1" name="supplierName">
           </div>
           <div class="form-group">
-            <label for="input2">Contact Name</label>
+            <label for="input2">ContactName</label>
             <input type="text" class="form-control" id="input2" name="contactName">
           </div>
           <div class="form-group">
@@ -39,7 +39,7 @@
             <input type="text" class="form-control" id="input4" name="city">
           </div>
           <div class="form-group">
-            <label for="input5">Postal Code</label>
+            <label for="input5">PostalCode</label>
             <input type="text" class="form-control" id="input5" name="postalCode">
           </div>
           <div class="form-group">
