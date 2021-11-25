@@ -46,4 +46,3 @@ SELECT * FROm Customers;
 
 SELECT CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country 
 	FROM Customers;
-
