@@ -46,4 +46,18 @@ VALUE (?, ?, ?, ?, ?, ?, ?);
 SELECT * FROM Customers ORDER BY CustomerID DESC;
 SELECT * FROM Suppliers ORDER BY SupplierID DESC;
 
-SELECT SupplierID, SupplierName, ContactName, Address, City, PostalCode, Country, Phone FROM Suppliers ORDER BY SupplierID DESC;
+SELECT CustomerID, CustomerName, ContactName, Address City, PostalCode, Country FROM Customers ORDER BY CustomerID DESC;
+
+
+SELECT 
+    SupplierID,
+    SupplierName,
+    ContactName,
+    Address,
+    City,
+    PostalCode,
+    Country,
+    Phone
+FROM
+    Suppliers
+ORDER BY SupplierID DESC;
