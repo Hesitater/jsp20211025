@@ -19,5 +19,5 @@ SELECT DISTINCT City, Country FROM Customers;
 
 
 
-system clear
+
 
