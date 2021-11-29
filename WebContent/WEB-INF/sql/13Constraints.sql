@@ -24,7 +24,7 @@ CREATE TABLE mytable13 (
 SELECT * FROM mytable13;
 
 INSERT INTO mytable13 (col1 , col2) VALUES ('abc', 'def');
-INSERT INTO mytable13 (col1 , col2) VALUES ('abc', 'def');
+INSERT INTO mytable13 (col1 , col2) VALUES ('abc', 'def');  -- col2가 UNIQUE라서 안됨
 INSERT INTO mytable13 (col1 , col2) VALUES ('abc', 'de');
 INSERT INTO mytable13 (col1) VALUES ('abc');
 
