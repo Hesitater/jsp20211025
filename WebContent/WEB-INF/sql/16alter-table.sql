@@ -5,9 +5,8 @@ CREATE TABLE mytable20 (
     col2 int
 );
 
-
-
 DESC mytable20;
+
 -- not null 제약 사항 추가
 ALTER TABLE mytable20 MODIFY COLUMN col1 INT NOT NULL;
 -- not null 제약 사항 삭제
@@ -46,7 +45,7 @@ DESC mytable20;--
 -- unique 제약사항 추가
 ALTER TABLE mytable20 MODIFY COLUMN col1 INT UNIQUE;
 
--- unuque 제약사항 삭제
+-- unique 제약사항 삭제
 ALTER TABLE mytable20 DROP INDEX col1;
 
 -- index 없는 경우
