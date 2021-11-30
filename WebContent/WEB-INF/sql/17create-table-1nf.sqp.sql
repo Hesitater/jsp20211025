@@ -22,6 +22,8 @@ CREATE TABLE mytable22Tel (
 
 SELECT * FROm mytable21Customer;
 SELECT * FROM mytable22Tel;
+DESC mytable21Customer;
+DESC mytable22Tel;
 
 
 
