@@ -1,0 +1,33 @@
+USE test;
+
+SELECT * FROM Products;
+
+SELECT * FROM Products
+WHERE Price >=10;
+
+SELECT * FROM Products
+WHERE Price <=20;
+
+SELECT * FROM Products
+WHERE Price >= 10 AND Price <= 20;
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+
+SELECT * FROM Products
+WHERE ProductName BETWEEN 'C' AND 'F';
+
+SELECT * FROM Products
+WHERE ProductName BETWEEN 'C' ANd 'G';
+
+SELECT * FROm Products;
+
+SELECT * FROM Employees ORDER BY BirthDate;
+SELECT * FROm Employees WHERE BirthDate BETWEEN '1958-01-01' AND '1958-12-31';
+
+DESC Employees;
+
+
+
+
+
