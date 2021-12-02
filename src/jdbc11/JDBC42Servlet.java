@@ -77,7 +77,7 @@ public class JDBC42Servlet extends HttpServlet {
 			
 			// 문제 발생
 	//		String a = "a";
-	//	Integer.parseInt(a);
+	//		Integer.parseInt(a);
 
 			// 3.2 2번 입금
 			Bank bank2 = dao.getBankById(con, 2); // 2번 계좌 조회
