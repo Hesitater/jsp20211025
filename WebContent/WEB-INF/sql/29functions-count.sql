@@ -29,12 +29,22 @@ SELECT count(DISTINCT City) FROM Suppliers;
 SELECT count(Country) FROM Suppliers;
 SELECT count(DISTINCT Country) FROM Suppliers;
 
+
+
+SELECT c.ContactName ,o.OrderDate, p.ProductName, ct.CategoryName, od.Quantity, s.ShipperName, s.Phone
+FROM Customers c JOIN Orders o On o.CustomerID = c.CustomerID
+				 JOIN Shippers s On o.ShipperID = s.ShipperID
+                 JOIN OrderDetails od On o.OrderID = od.OrderID
+                 JOIN Products p ON od.ProductID = p.ProductID
+                 JOIN Categories ct On p.CategoryID = ct.CategoryID
+ORDER BY 1,2; 
+
+
+
+
+
 -- 연습3 :Seafood가 몇번 주문 되었는지 조회
-SELECT * FROM Customers;
-SELECT * FROM Categories;
-SELECT * FROM Orders, OrderDetails;
-SELECT * FROM Orders, Shippers;
-SELECT * FROM OrderDetails, Products;
+
 
 SELECT count(*) FROM OrderDetails od JOIN Products p ON od.ProductID = p.ProductID
 							  JOIN Categories ct On p.CategoryID = ct.CategoryID
