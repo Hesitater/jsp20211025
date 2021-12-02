@@ -7,6 +7,7 @@ SELECT * FROM Employees;
 SELECT * FROM Orders;
 
 -- Right, left join은 순서가 중요함 
+-- 이 날짜에 누가 주문을 했나? 근데 이 고객이 어떤 직원에게 주문을했나?
 SELECT c.customerName, o.OrderDate, o.EmployeeID, e.LastName, e.FirstName
 FROM Customers c JOIN Orders o ON c.customerID = o.CustomerID
 JOIN Employees e ON o.EmployeeID = e.EmployeeID
