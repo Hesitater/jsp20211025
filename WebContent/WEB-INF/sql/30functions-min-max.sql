@@ -4,7 +4,7 @@ use test;
 SELECT MIN(Price) AS SmallestPrice FROM Products;
 SELECT MAX(Price) LargestPrice FROM Products; 		-- AS 생략 가능
 
--- Employees테이브에서 BirthDate  가장 이른 생일, 늦은 생일조회 
+-- Employees테이블에서 BirthDate  가장 이른 생일, 늦은 생일조회 
 
 SELECT * FROM Employees;
 SELECT MIN(BirthDate) 느린날짜 FROM Employees; 
