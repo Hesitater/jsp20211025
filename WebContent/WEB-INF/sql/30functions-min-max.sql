@@ -1,5 +1,7 @@
 use test;
 
+SELECT * FROM Products
+ORDER BY Price ASC;
 
 SELECT MIN(Price) AS SmallestPrice FROM Products;
 SELECT MAX(Price) LargestPrice FROM Products; 		-- AS 생략 가능
