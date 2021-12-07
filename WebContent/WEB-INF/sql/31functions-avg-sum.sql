@@ -8,7 +8,7 @@ SELECT SUM(Price) FROM Products;
 
 SELECT * FROM Products;
 
-INSERT INTO Products (ProductName , SupplierID, CategoryID, ㅕnit, Price)
+INSERT INTO Products (ProductName , SupplierID, CategoryID, Unit, Price)
 VALUES ('My Prod',1 ,1, '1KG', 0 );
 
 INSERT INTO Products (ProductName, SupplierID, CategoryID, unit)
