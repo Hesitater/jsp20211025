@@ -104,6 +104,12 @@ GROUP BY o.CustomerID;
 -- 연습5 : 고객별로 주문한 총 주문한 수량
 -- tables : Orders, OrderDetails
 
+-- 내가
+SELECT o.CustomerID, SUM(od.Quantity) FROM Orders o
+JOIN OrderDetails od ON o.OrderID = od.OrderID
+GROUP BY o.CustomerID; 
+
+-- Baek T
 SELECT CustomerID, sum(Quantity) 
 FROM Orders o JOIN OrderDetails od ON o.OrderID = od.OrderID
 GROUP BY CustomerID
