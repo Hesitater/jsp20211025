@@ -4,6 +4,7 @@ USE test;
 
 
 DESC mytable19Student;
+SELECT* FROM mytable19Student;
 
 -- add column
 ALTER TABLE mytable19Student ADD COLUMN (
@@ -17,11 +18,15 @@ ALTER TABLE mytable19Student ADD COLUMN (
 
 ALTER TABLE mytable19Student DROP COLUMN foot;
 
--- AFTER, BEFORE
+-- AFTER
+
+ALTER TABLE mytable19Student DROP COLUMN foot2;
 
 ALTER TABLE mytable19Student ADD foot DOUBLE AFTER name;
+ALTER TABLE mytable19Student ADD foot2 DOUBLE AFTER foot;
+
 
 DESC mytable19Student;
 
-
+SELECT * FROM mytable19Student;
 
