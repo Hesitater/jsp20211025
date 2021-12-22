@@ -31,11 +31,11 @@ ALTER TABLE mytable20 ADD CHECK (col1 > 10);
 -- 제약사항 확인
 SHOW CREATE TABLE mytable20;
 
-'CREATE TABLE `mytable20` (
+CREATE TABLE `mytable20` (
   `col1` int(11),
   `col2` int(11) DEFAULT NULL,
   CONSTRAINT `CONSTRAINT_1` CHECK (`col1` > 10)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- check 제약사항 삭제
 ALTER TABLE mytable20 DROP CONSTRAINT CONSTRAINT_1;
