@@ -35,8 +35,12 @@ SELECT CustomerID, (OrderID)  FROM Orders
 SELECT o.CustomerID, c.CustomerName, count(OrderID)  
 FROM Orders o JOIN Customers c ON o.CustomerID = c.CustomerID
 GROUP BY o.CustomerID
-HAVING count(OrderID) = 1
-;
+HAVING count(OrderID) = 1;
+
+SELECT c.CustomerName  
+FROM Orders o JOIN Customers c ON o.CustomerID = c.CustomerID
+GROUP BY o.CustomerID
+HAVING count(OrderID) = 1;
 
 
 -- 선택님 코드
